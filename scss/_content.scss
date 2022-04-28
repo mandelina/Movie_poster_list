@@ -1,0 +1,62 @@
+// 정렬
+@mixin center-xy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin d_deco {
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  font-size: 13px;
+  display: inline;
+}
+
+@mixin btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Noto Sans KR";
+  color: #000000;
+  display: inline-block;
+  background: #f2f2f2;
+  width: 160%
+  padding: 9px 0 12px 0;
+  border-top: 1px solid #bdbdbd;
+}
+
+.mov_cnt dt,
+.mov_cnt dd {
+  @include d_deco();
+}
+
+.mov_cnt dt {
+  color: #828282;
+}
+
+.mov_cnt dd {
+  color: #000000;
+}
+
+.link_reserv,
+.link_teaser {
+  @include btn();
+}
+
+.link_reserv {
+  margin-left: -20px;
+  border-right: 1px solid #bdbdbd;
+  text-align: center;
+}
+.link_teaser {
+  margin-right: -20px;
+  &::before {
+    content: "";
+    background: url("../play_btn.png") no-repeat 0px 0px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    float: left;
+    margin: 2px 2px 0 24px;
+  }
+}
