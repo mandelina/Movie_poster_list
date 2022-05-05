@@ -1,6 +1,6 @@
 # Movie_poster_list
 
-#### https://github.com/mandelina/Movie_poster_list/index.html
+#### https://github.com/mandelina/Movie_poster_list/Movie/index.html
 
 ### [프로젝트 설명]
 영화예매 홈페이지 제작
